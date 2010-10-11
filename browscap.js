@@ -1,5 +1,11 @@
 var browsers = Array();
 
+var inifile = "./browscap.ini";
+
+exports.set_ini = function(filename) {
+	inifile = filename;
+}
+
 function parse(filename) {
 
 	var fs = require('fs');
@@ -88,7 +94,7 @@ exports.get_browser = function(user_agent) {
 
 	//If this is the first invocation, parse the ini file
 	if (browsers.length == 0) {
-		browsers = parse('phpbrowscap.ini');
+		browsers = parse(inifile);
 	}
 
 	//Check user agent against each user agent pattern

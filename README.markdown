@@ -1,4 +1,4 @@
-= Introduction
+# Introduction
 
 node-browscap is a port of PHP's get_browser function to node.js
 
@@ -21,7 +21,7 @@ Example:
 	//Will print "IE 8.0"
 	console.log(browser['Browser'] + " " + browser['Version']);
 
-= Examples
+# Examples
 
 There is a test.js file which demonstrates how to use node-browscap and tests
 several user agents.
@@ -30,7 +30,7 @@ To run:
 
 	$ node test.js
 
-= License
+# License
 
 Copyright 2010 Dan Grossman. All rights reserved.
 Permission is hereby granted, free of charge, to any person obtaining a copy

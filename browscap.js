@@ -72,20 +72,6 @@ function parse(filename) {
 
 	}
 
-	//Fixes some cases where a parent is referenced before it's encountered in the file
-	/*
-	for (var i = 0; i < browsers.length; i++) {
-		var browser = browsers[i];
-		for (var j = 0; j < browsers.length; j++) {
-			if (browsers[j]['browser_name_pattern'] == browser['Parent']) {
-				for (var key in browsers[j])
-					if (key != 'browser_name_regex' && key != 'browser_name_pattern')
-						browser[key] = browsers[j][key];
-			}
-		}
-	}		
-	*/
-
 	return browsers;
 
 }

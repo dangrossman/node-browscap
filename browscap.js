@@ -1,5 +1,5 @@
 var browsers = []
-  , inifile = "./browscap.ini"
+  , inifile = './browscap.ini'
 
 exports.setIni = function(filename) {
   inifile = filename

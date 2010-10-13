@@ -2,7 +2,7 @@
 
 node-browscap is a port of PHP's get_browser function to node.js
 
-It makes available a get_browser function which takes a browser user agent string 
+It makes available a `getBrowser` function which takes a browser user agent string 
 and returns an associative array of properties and abilities of that browser.
 
 You must provide a browscap.ini file, which you can get here:
@@ -14,16 +14,16 @@ Both the browscap.ini or php_browscap.ini files should work.
 Example:
 
 	var browscap = require('browscap');
-	browscap.set_ini('./browscap.ini');
+	browscap.setIni('./browscap.ini');
 
-	var browser = browscap.get_browser("Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; WinTSI 05.11.2009)");
+	var browser = browscap.getBrowser("Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; WinTSI 05.11.2009)");
 
 	//Will print "IE 8.0"
 	console.log(browser['Browser'] + " " + browser['Version']);
 
 # Installation
 
-Using npm run `npm install browscap` and require('browscap') in your project
+Using npm run `npm install browscap`
 
 You can get npm from http://npmjs.org/
 

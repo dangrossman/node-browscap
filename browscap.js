@@ -77,6 +77,6 @@ exports.getBrowser = function(userAgent) {
   for (var i = 0; i < browsers.length; i++) {
     if (browsers[i].__regex__.test(userAgent)) {
       return browsers[i]
-	}
+    }
   }
 }

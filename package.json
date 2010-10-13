@@ -1,6 +1,6 @@
 { "name" : "browscap"
 , "description" : "PHP's get_browser/browscap.ini for Node"
-, "version" : "0.1.0"
+, "version" : "0.1.1"
 , "author" : "Dan Grossman"
 , "repository" :
   { "type" : "git"

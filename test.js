@@ -1,5 +1,5 @@
-var browscap = require('./browscap');
-browscap.set_ini('phpbrowscap.ini');
+var browscap = require('browscap');
+browscap.set_ini('browscap.ini');
 
 console.log("Running tests...");
 var passed = 0;

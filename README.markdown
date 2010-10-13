@@ -13,7 +13,7 @@ Both the browscap.ini or php_browscap.ini files should work.
 
 Example:
 
-	var browscap = require('./browscap');
+	var browscap = require('browscap');
 	browscap.set_ini('./browscap.ini');
 
 	var browser = browscap.get_browser("Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; WinTSI 05.11.2009)");
@@ -23,9 +23,11 @@ Example:
 
 # Installation
 
-Either check out the git repository or run `npm install browscap`
+Using npm run `npm install browscap` and require('browscap') in your project
 
 You can get npm from http://npmjs.org/
+
+Alternatively you can checkout the git repository
 
 # Examples
 

@@ -21,6 +21,12 @@ Example:
 	//Will print "IE 8.0"
 	console.log(browser['Browser'] + " " + browser['Version']);
 
+# Installation
+
+Either check out the git repository or run `npm install browscap`
+
+You can get npm from http://npmjs.org/
+
 # Examples
 
 There is a test.js file which demonstrates how to use node-browscap and tests

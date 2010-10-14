@@ -1,6 +1,6 @@
 { "name" : "browscap"
 , "description" : "PHP's get_browser/browscap.ini for Node"
-, "version" : "0.1.1"
+, "version" : "0.1.2"
 , "author" : "Dan Grossman"
 , "contributors" :
   [ "Tor Valamo <tor.valamo@gmail.com> (http://github.com/torvalamo)"

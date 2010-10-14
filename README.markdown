@@ -21,6 +21,9 @@ Example:
 	//Will print "IE 8.0"
 	console.log(browser['Browser'] + " " + browser['Version']);
 
+Thanks to [torvalamo](http://github.com/torvalamo) for some rewrites to 
+improve performance.
+
 # Installation
 
 Using npm run `npm install browscap`

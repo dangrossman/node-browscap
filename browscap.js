@@ -55,7 +55,7 @@ function parse(filename) {
           current[name] = value
         } else {
           // Copy properties from the parent's entry
-          var i = patternIndex.indexOf(value)
+          var i = patternIndex.lastIndexOf(value)
           for (var key in browserArray[i]) {
             if (key != '__regex__' && key != 'Parent') {
               current[key] = browserArray[i][key]

@@ -30,7 +30,7 @@ Using npm run `npm install browscap`
 
 You can get npm from http://npmjs.org/
 
-Alternatively you can checkout the git repository
+Alternatively you can clone the git repository
 
 # Examples
 

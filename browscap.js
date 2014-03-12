@@ -47,7 +47,7 @@ function parse(filename) {
           , name = parts[0]
           , value = parts[1]
         
-        if (name == 'Browser' && value[0] == '"' && value.slice(-1) == '"') {
+        if (value[0] == '"' && value.slice(-1) == '"') {
           value = value.slice(1, -1)
         }
         

@@ -35,12 +35,12 @@ if (browser['Browser'] == 'Firefox' && browser['Version'] == '3.6') {
         failed++;
 }
 
-var browser = browscap.getBrowser("Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20060127 Netscape/8.1");
-if (browser['Browser'] == 'Netscape' && browser['Version'] == '8.1') {
+var browser = browscap.getBrowser("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; Touch; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; IPH 1.1.21.4019; ASU2JS)");
+if (browser['Browser'] == 'IE' && browser['Version'] == '11.0') {
         console.log(browser['Browser'] + " " + browser['Version']);
         passed++;
 } else {
-        console.log("Failed to identify Netscape 8.1");
+        console.log("Failed to identify IE 11");
         console.log(browser['Browser'] + " " + browser['Version']);
         failed++;
 }

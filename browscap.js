@@ -57,17 +57,25 @@ function parse(filename) {
       }
     })
 
-  for (var i = 0; i < browserArray.length; i++) {
-    var current = browserArray[i]
-    if (current.hasOwnProperty('Parent')) {
-      var j = patternIndex.lastIndexOf(current['Parent'])
-      for (var key in browserArray[j]) {
-        if (key != '__regex__' && key != 'Parent' && typeof browserArray[i][key] == 'undefined') {
-          browserArray[i][key] = browserArray[j][key]
+  
+  //copy properties from parent definition, with up to depth=2 parents
+  for (var depth = 0; depth < 2; depth++) {
+    for (var i = 0; i < browserArray.length; i++) {
+      var current = browserArray[i]
+      if (current.hasOwnProperty('Parent')) {
+        var j = patternIndex.lastIndexOf(current['Parent'])
+        for (var key in browserArray[j]) {
+          if (key != '__regex__' && key != 'Parent' && typeof browserArray[i][key] == 'undefined') {
+            browserArray[i][key] = browserArray[j][key]
+          }
         }
       }
     }
   }
+
+  browserArray.sort(function(a, b) {
+    return b.__pattern__.length - a.__pattern__.length;
+  });
 
   return browserArray
 }

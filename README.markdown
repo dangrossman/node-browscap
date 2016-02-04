@@ -1,3 +1,5 @@
+This library is no longer actively maintained. I will not be accepting any issues or pull requests. In the 5+ years since it was written, management of the source browscap.ini files changed and the characteristics of the data they provide changed significantly. In my own projects, I now use [ua-parser](https://github.com/tobie/ua-parser) which has libraries available in many languages. 
+
 # Introduction
 
 node-browscap is a port of PHP's get_browser function to node.js
@@ -61,7 +63,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE. 
-
-# Important Notice
-
-This library is no longer actively maintained. In the 5 years since it was written, management of the source browscap.ini files changed and the quality and size of the data they provide changed significantly. In my own projects, I now use [ua-parser](https://github.com/tobie/ua-parser) which has libraries available in many languages.

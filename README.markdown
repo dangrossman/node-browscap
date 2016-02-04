@@ -61,3 +61,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE. 
+
+# Important Notice
+
+This library is no longer actively maintained, due to issues with the management and size of the source INI files in the years since it was written.
+
+In my own projects, I now use [ua-parser](https://github.com/tobie/ua-parser) which has libraries available in many languages.

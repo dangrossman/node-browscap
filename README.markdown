@@ -64,6 +64,4 @@ IN THE SOFTWARE.
 
 # Important Notice
 
-This library is no longer actively maintained, due to issues with the management and size of the source INI files in the years since it was written.
-
-In my own projects, I now use [ua-parser](https://github.com/tobie/ua-parser) which has libraries available in many languages.
+This library is no longer actively maintained. In the 5 years since it was written, management of the source browscap.ini files changed and the quality and size of the data they provide changed significantly. In my own projects, I now use [ua-parser](https://github.com/tobie/ua-parser) which has libraries available in many languages.
